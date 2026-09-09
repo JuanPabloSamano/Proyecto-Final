@@ -39,3 +39,31 @@ Las principales variables utilizadas fueron:
 - Condición experimental (`condition`)
 
 Este dataset permitió estudiar si existe una relación entre el tempo musical y la cadencia de carrera.
+
+## Metodología
+
+El análisis se desarrolló siguiendo las siguientes etapas:
+
+1. **Carga de datos**
+   
+   Se importaron los datasets utilizando Python y librerías de análisis de datos como Pandas.
+
+2. **Exploración inicial**
+
+   Se revisó la estructura de los datos mediante dimensiones, tipos de variables, valores faltantes y estadísticas descriptivas.
+
+3. **Limpieza de datos**
+
+   Se eliminaron registros inválidos y valores que podían afectar el análisis. En el dataset de corredores se descartaron observaciones donde el BPM no estaba registrado correctamente.
+
+4. **Análisis exploratorio**
+
+   Se analizaron distribuciones de BPM, estadísticas de cadencia y la relación entre ambas variables mediante correlación.
+
+5. **Integración de datasets**
+
+   Los datasets fueron relacionados utilizando rangos de BPM para comparar la disponibilidad de canciones en Spotify con los rangos asociados a diferentes niveles de cadencia.
+
+6. **Visualización**
+
+   Se generaron gráficas para identificar patrones entre el tempo musical y la cadencia de los corredores.
