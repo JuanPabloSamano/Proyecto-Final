@@ -11,3 +11,9 @@ Durante los entrenamientos de running, la música suele seleccionarse principalm
 ## Pregunta de investigación
 
 ¿Existe una relación entre el BPM de la música y la cadencia de los corredores medida en pasos por minuto (SPM), y qué rangos de BPM podrían servir como referencia para seleccionar canciones durante entrenamientos de running?
+
+## Usuario e interesado
+
+El principal usuario de este análisis son corredores recreativos, entrenadores deportivos y aplicaciones enfocadas en entrenamiento físico.
+
+Este análisis puede ayudar a tomar decisiones sobre la selección de música para entrenamientos, utilizando rangos de BPM asociados con diferentes niveles de cadencia.
