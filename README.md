@@ -91,3 +91,11 @@ Aunque los resultados muestran una relación entre el tempo musical y la cadenci
 - La cadencia puede verse afectada por otros factores como nivel de entrenamiento, velocidad, fatiga, terreno o preferencias personales.
 
 - El análisis considera principalmente el BPM de la música, sin evaluar otros elementos musicales como género, intensidad o estructura rítmica.
+
+## Conclusiones
+
+El análisis realizado permitió identificar una relación positiva entre el tempo musical medido en BPM y la cadencia de los corredores medida en SPM. Los resultados sugieren que canciones con tempos más altos pueden estar asociadas con mayores valores de cadencia durante una sesión de running.
+
+Sin embargo, los resultados deben interpretarse como una asociación y no como una relación causal, debido a que existen múltiples factores que pueden influir en la cadencia de un corredor.
+
+Este proyecto demuestra cómo la integración de datos musicales y deportivos puede generar información útil para la selección de música durante entrenamientos. Como trabajo futuro, sería posible incorporar más variables como velocidad, género musical, intensidad del ejercicio o preferencias individuales para obtener un análisis más completo.
