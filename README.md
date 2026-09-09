@@ -79,3 +79,15 @@ A partir del análisis exploratorio se encontraron los siguientes resultados:
 - El análisis del catálogo de Spotify mostró que existen suficientes canciones disponibles dentro de los rangos de BPM relacionados con mayores valores de cadencia, especialmente entre 160 y 179 BPM.
 
 - Las visualizaciones permitieron observar la diferencia entre la distribución de canciones disponibles y los rangos de tempo asociados con una mayor cadencia durante la actividad de running.
+
+## Limitaciones
+
+Aunque los resultados muestran una relación entre el tempo musical y la cadencia, existen algunas limitaciones en el análisis:
+
+- La correlación encontrada no implica que un mayor BPM sea la causa directa de una mayor cadencia.
+
+- El dataset de corredores corresponde a condiciones experimentales específicas y puede no representar a todos los corredores.
+
+- La cadencia puede verse afectada por otros factores como nivel de entrenamiento, velocidad, fatiga, terreno o preferencias personales.
+
+- El análisis considera principalmente el BPM de la música, sin evaluar otros elementos musicales como género, intensidad o estructura rítmica.
