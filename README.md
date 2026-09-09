@@ -67,3 +67,15 @@ El análisis se desarrolló siguiendo las siguientes etapas:
 6. **Visualización**
 
    Se generaron gráficas para identificar patrones entre el tempo musical y la cadencia de los corredores.
+
+## **Resultados principales**
+
+A partir del análisis exploratorio se encontraron los siguientes resultados:
+
+- Se identificó una relación positiva entre el tempo musical y la cadencia de los corredores. La correlación entre BPM promedio de la música y pasos por minuto (SPM) fue de aproximadamente 0.72, indicando una asociación positiva entre ambas variables.
+
+- Los rangos de BPM más altos presentaron mayores valores promedio de cadencia. En particular, las canciones dentro de rangos superiores a 160 BPM estuvieron asociadas con valores más elevados de pasos por minuto en los corredores.
+
+- El análisis del catálogo de Spotify mostró que existen suficientes canciones disponibles dentro de los rangos de BPM relacionados con mayores valores de cadencia, especialmente entre 160 y 179 BPM.
+
+- Las visualizaciones permitieron observar la diferencia entre la distribución de canciones disponibles y los rangos de tempo asociados con una mayor cadencia durante la actividad de running.
