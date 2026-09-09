@@ -54,7 +54,7 @@ El análisis se desarrolló siguiendo las siguientes etapas:
 
 3. **Limpieza de datos**
 
-   Se eliminaron registros inválidos y valores que podían afectar el análisis. En el dataset de corredores se descartaron observaciones donde el BPM no estaba registrado correctamente.
+   Se eliminaron registros inválidos y valores que podían afectar el análisis. En el dataset de corredores se descartaron observaciones donde el BPM promedio tenía valores no válidos (-1), evitando afectar los cálculos de correlación y promedios.
 
 4. **Análisis exploratorio**
 
@@ -62,7 +62,7 @@ El análisis se desarrolló siguiendo las siguientes etapas:
 
 5. **Integración de datasets**
 
-   Los datasets fueron relacionados utilizando rangos de BPM para comparar la disponibilidad de canciones en Spotify con los rangos asociados a diferentes niveles de cadencia.
+ Los datasets fueron comparados utilizando rangos de BPM para analizar si la disponibilidad de canciones en Spotify coincide con los rangos de tempo asociados con mayores valores de cadencia.
 
 6. **Visualización**
 
