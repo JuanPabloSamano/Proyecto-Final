@@ -98,19 +98,19 @@ El análisis realizado permitió identificar una relación positiva entre el tem
 Sin embargo, los resultados deben interpretarse como una asociación y no como una relación causal, debido a que existen múltiples factores que pueden influir en la cadencia de un corredor.
 
 Este proyecto demuestra cómo la integración de datos musicales y deportivos puede generar información útil para la selección de música durante entrenamientos. Como trabajo futuro, sería posible incorporar más variables como velocidad, género musical, intensidad del ejercicio o preferencias individuales para obtener un análisis más completo.
-##SEGUNDA ENTREGA
-##Descripción de la segunda entrega
+## SEGUNDA ENTREGA
+## Descripción de la segunda entrega
 En esta segunda etapa del proyecto desarrollamos un sistema de recomendación musical utilizando Python. Partiendo del análisis de la primera entrega, donde estudiamos la relación entre los BPM de las canciones y la cadencia de los corredores, buscamos aplicar esos resultados para crear una herramienta que pueda recomendar música de acuerdo con los gustos del usuario y el tipo de ejercicio que realizará.
 
 El sistema permite que una persona ingrese tres de sus canciones favoritas y seleccione el tipo de entrenamiento que hará ese día. Con esta información, el programa analiza las características musicales de las canciones y busca otras similares dentro de nuestro catálogo.
 
 El objetivo es generar una playlist personalizada que tenga un mínimo de 10 canciones y una duración de al menos 40 minutos, considerando tanto las preferencias musicales del usuario como el ritmo del ejercicio.
-##Objetivo
+## Objetivo
 Desarrollar un sistema de recomendación que utilice las características musicales de las canciones y técnicas de análisis de datos para generar playlists personalizadas para diferentes tipos de entrenamiento.
 
 Buscamos que las recomendaciones no dependan únicamente de los BPM, sino también de qué tanto se parecen las canciones a las preferencias del usuario.
 
-##Ampliación del dataset
+## Ampliación del dataset
 Para esta segunda entrega decidimos ampliar nuestra base de datos de Spotify, ya que queríamos que el sistema tuviera más opciones al momento de recomendar canciones.
 
 En la primera entrega trabajamos con un dataset de aproximadamente 114,000 registros de canciones. Para esta etapa incorporamos otro dataset obtenido de Kaggle, llamado Spotify 1.2M+ Songs, que contiene aproximadamente 1.2 millones de registros.
@@ -128,7 +128,7 @@ Antes de utilizar los datos, revisamos que las columnas fueran compatibles con n
 
 Con esto logramos ampliar considerablemente el catálogo disponible para generar recomendaciones.
 
-##Metodología del sistema de recomendación
+## Metodología del sistema de recomendación
 Para desarrollar el recomendador utilizamos Python y librerías como Pandas, NumPy, Scikit-learn y Matplotlib.
 
 El funcionamiento del sistema se dividió en las siguientes etapas:
@@ -175,7 +175,7 @@ Finalmente, el programa selecciona las canciones recomendadas hasta cumplir las 
 El resultado se presenta en una tabla que incluye el nombre de cada canción, artista, BPM, duración, distancia calculada con PCA y enlace a Spotify.
 También se genera un archivo CSV que permite guardar las recomendaciones.
 
-##Visualización de resultados
+## Visualización de resultados
 Para entender mejor cómo funciona el recomendador, generamos una gráfica que representa las canciones utilizando los dos primeros componentes principales del PCA.
 
 En esta gráfica utilizamos diferentes colores para identificar:
@@ -189,7 +189,7 @@ Esta visualización nos ayuda a observar cómo se distribuyen las canciones y qu
 
 Aunque la gráfica utiliza dos componentes para facilitar su interpretación, el cálculo de distancias considera el espacio PCA utilizado por el modelo.
 
-##Resultados obtenidos
+## Resultados obtenidos
 Para comprobar que nuestro sistema funcionaba correctamente, realizamos una prueba utilizando las siguientes canciones:
 
 
@@ -210,7 +210,7 @@ También observamos que las canciones recomendadas se encontraban relativamente 
 
 Sin embargo, notamos que varias recomendaciones tenían BPM muy similares y que algunas canciones eran poco conocidas. Esto nos permitió identificar oportunidades para mejorar el sistema y lograr un mayor equilibrio entre el ritmo del entrenamiento y los gustos del usuario.
 
-##Limitaciones
+## Limitaciones
 Aunque logramos desarrollar un sistema funcional, identificamos algunas limitaciones:
 
 - La similitud musical se calcula a partir de características numéricas, por lo que dos canciones pueden parecerse en sus datos, pero no necesariamente gustarle a la misma persona.
@@ -219,7 +219,7 @@ Aunque logramos desarrollar un sistema funcional, identificamos algunas limitaci
 - El sistema genera las recomendaciones y sus enlaces a Spotify, pero no crea automáticamente una playlist dentro de una cuenta de Spotify.
 - Actualmente, el recomendador no aprende de las canciones que el usuario acepta o rechaza.
 
-##Conclusiones de la segunda entrega
+## Conclusiones de la segunda entrega
 
 
 
