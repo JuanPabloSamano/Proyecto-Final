@@ -226,3 +226,5 @@ Uno de los principales aprendizajes fue entender cómo herramientas como Standar
 
 Las pruebas realizadas nos permitieron comprobar que el programa puede recibir las preferencias de un usuario y generar una playlist que cumple con los requisitos de cantidad de canciones y duración.
 Como mejora futura, nos gustaría incorporar información sobre la popularidad de las canciones, las preferencias de los usuarios y los resultados de sus entrenamientos. De esta manera, podríamos hacer que las recomendaciones sean cada vez más personalizadas.
+
+En general, consideramos que esta segunda etapa cumplió con nuestro objetivo de desarrollar un sistema de recomendación funcional y nos permitió aplicar conceptos de análisis de datos y aprendizaje automático a una situación relacionada con el running.
