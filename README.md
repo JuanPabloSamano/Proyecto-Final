@@ -220,6 +220,6 @@ Aunque logramos desarrollar un sistema funcional, identificamos algunas limitaci
 - Actualmente, el recomendador no aprende de las canciones que el usuario acepta o rechaza.
 
 ## Conclusiones de la segunda entrega
-
+En esta segunda entrega logramos pasar de un análisis de datos a una aplicación práctica de los resultados obtenidos. Mientras que en la primera parte estudiamos la relación entre la música y la cadencia de los corredores, en esta etapa utilizamos esa información como referencia para desarrollar un recomendador musical.
 
 
