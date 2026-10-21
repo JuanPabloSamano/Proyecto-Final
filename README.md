@@ -222,4 +222,5 @@ Aunque logramos desarrollar un sistema funcional, identificamos algunas limitaci
 ## Conclusiones de la segunda entrega
 En esta segunda entrega logramos pasar de un análisis de datos a una aplicación práctica de los resultados obtenidos. Mientras que en la primera parte estudiamos la relación entre la música y la cadencia de los corredores, en esta etapa utilizamos esa información como referencia para desarrollar un recomendador musical.
 
-
+Las pruebas realizadas nos permitieron comprobar que el programa puede recibir las preferencias de un usuario y generar una playlist que cumple con los requisitos de cantidad de canciones y duración.
+Como mejora futura, nos gustaría incorporar información sobre la popularidad de las canciones, las preferencias de los usuarios y los resultados de sus entrenamientos. De esta manera, podríamos hacer que las recomendaciones sean cada vez más personalizadas.
