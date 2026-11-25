@@ -230,6 +230,12 @@ Como mejora futura, nos gustaría incorporar información sobre la popularidad d
 En general, consideramos que esta segunda etapa cumplió con nuestro objetivo de desarrollar un sistema de recomendación funcional y nos permitió aplicar conceptos de análisis de datos y aprendizaje automático a una situación relacionada con el running.
 
 ## TERCERA ENTREGA
+### Agrupamiento de canciones con PCA y K-means 
+
+Después de preparar las características musicales y aplicar PCA, se incorporó K-means para identificar grupos de canciones con perfiles similares dentro del espacio de componentes principales. El modelo se configuró para generar 5 clusters y se ajustó utilizando una muestra máxima de 20,000 canciones. 
+
+Para mantener reproducible la ejecución se establecieron random_state y n_init=10. El modelo asigna a cada canción una etiqueta de grupo, lo que permite visualizar la distribución de las canciones y revisar donde se ubican las favoritas y las recomendaciones.
+
 
 ### Integración con el recomendador y resultados 
 
@@ -239,8 +245,3 @@ La visualización permite comparar la ubicación de las canciones favoritas y la
 
 En la prueba documentada se generó una lista de 10 canciones con una duración total de 42.3 minutos y un rango de 140–159 BPM. Durante la preparación del catálogo se eliminaron 7,388 versiones repetidas. Estos valores corresponden a esa ejecución y no deben presentarse como resultados universales del sistema.
 
-### Agrupamiento de canciones con PCA y K-means 
-
-Después de preparar las características musicales y aplicar PCA, se incorporó K-means para identificar grupos de canciones con perfiles similares dentro del espacio de componentes principales. El modelo se configuró para generar 5 clusters y se ajustó utilizando una muestra máxima de 20,000 canciones. 
-
-Para mantener reproducible la ejecución se establecieron random_state y n_init=10. El modelo asigna a cada canción una etiqueta de grupo, lo que permite visualizar la distribución de las canciones y revisar donde se ubican las favoritas y las recomendaciones.
