@@ -1,0 +1,8 @@
+__pycache__/
+.venv/
+*.csv
+*.zip
+kaggle.json
+.streamlit/secrets.toml
+.env
+.DS_Store

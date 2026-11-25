@@ -1,0 +1,13 @@
+[theme]
+base = "dark"
+primaryColor = "#C8FF2E"
+backgroundColor = "#0B0F14"
+secondaryBackgroundColor = "#151B23"
+textColor = "#E8EDF2"
+borderColor = "#232B36"
+baseRadius = "12px"
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+headingFont = "Space Grotesk:https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap"
+
+[client]
+toolbarMode = "minimal"

@@ -1,0 +1,167 @@
+/* Corre a tu Ritmo · estilos propios encima del tema oscuro de .streamlit/config.toml */
+:root {
+  --fondo: #0B0F14;
+  --superficie: #151B23;
+  --superficie-2: #1C2430;
+  --borde: #232B36;
+  --texto: #E8EDF2;
+  --texto-2: #9AA6B2;
+  --lima: #C8FF2E;
+  --coral: #FF6B5B;
+  --z1: #5B9BFF; --z2: #2ED3B7; --z3: #C8FF2E; --z4: #FFB020; --z5: #FF4D4D;
+  --titulos: "Space Grotesk", "Inter", system-ui, sans-serif;
+}
+
+/* Contenedor principal más angosto y aireado */
+.block-container { max-width: 1080px; padding-top: 2.2rem; padding-bottom: 4rem; }
+header[data-testid="stHeader"] { background: transparent; }
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative; overflow: hidden;
+  border: 1px solid var(--borde); border-radius: 20px;
+  padding: 36px 36px 28px;
+  background:
+    radial-gradient(1200px 300px at 85% -40%, rgba(200,255,46,.18), transparent 60%),
+    linear-gradient(160deg, #121922 0%, #0B0F14 70%);
+  margin-bottom: 28px;
+}
+.hero .eyebrow {
+  font: 600 12px/1 "Inter", sans-serif; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--lima); margin-bottom: 14px;
+}
+.hero h1 {
+  font-family: var(--titulos); font-weight: 700; font-size: clamp(2.2rem, 6vw, 3.6rem);
+  line-height: 1.02; letter-spacing: -.02em; margin: 0 0 12px; padding: 0; color: var(--texto);
+}
+.hero h1 .acento { color: var(--lima); }
+.hero h1 [data-testid="stHeaderActionElements"], .paso [data-testid="stHeaderActionElements"],
+.res-cabecera [data-testid="stHeaderActionElements"] { display: none; }
+.hero p.lead { color: var(--texto-2); font-size: 1.05rem; max-width: 560px; margin: 0 0 22px; }
+.hero .pulso { position: absolute; right: -10px; top: 26px; width: 46%; max-width: 460px; opacity: .9; }
+.hero .pulso path { stroke: var(--lima); stroke-width: 2.5; fill: none;
+  stroke-dasharray: 900; stroke-dashoffset: 900; animation: trazo 2.4s ease-out forwards; }
+@keyframes trazo { to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) { .hero .pulso path { animation: none; stroke-dashoffset: 0; } }
+
+.chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.chip {
+  display: inline-flex; align-items: baseline; gap: 6px;
+  background: rgba(255,255,255,.04); border: 1px solid var(--borde);
+  border-radius: 999px; padding: 8px 14px; font-size: .88rem; color: var(--texto-2);
+}
+.chip b { color: var(--texto); font-family: var(--titulos); font-size: 1rem; }
+
+/* ---------- Pasos ---------- */
+.paso { display: flex; align-items: center; gap: 12px; margin: 30px 0 6px; }
+.paso .n {
+  width: 30px; height: 30px; border-radius: 50%; flex: none;
+  display: grid; place-items: center;
+  background: var(--lima); color: var(--fondo);
+  font: 700 15px/1 var(--titulos);
+}
+.paso h3 { font-family: var(--titulos); font-weight: 700; font-size: 1.35rem; margin: 0; padding: 0; }
+.paso-sub { color: var(--texto-2); font-size: .92rem; margin: 0 0 14px 42px; }
+
+/* Canción elegida */
+.cancion-ok {
+  display: flex; align-items: center; gap: 10px;
+  background: var(--superficie-2); border: 1px solid var(--borde); border-left: 3px solid var(--lima);
+  border-radius: 10px; padding: 10px 12px; margin-top: 6px;
+}
+.cancion-ok .txt { min-width: 0; flex: 1; }
+.cancion-ok .t { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cancion-ok .a { color: var(--texto-2); font-size: .85rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bpm {
+  flex: none; font: 600 .78rem/1 "Inter", sans-serif; color: var(--fondo);
+  background: var(--lima); border-radius: 999px; padding: 5px 9px;
+}
+.vacia {
+  border: 1px dashed var(--borde); border-radius: 10px; padding: 12px;
+  color: var(--texto-2); font-size: .85rem; margin-top: 6px; text-align: center;
+}
+
+/* ---------- Escala de zonas ---------- */
+.escala { margin: 4px 0 6px; }
+.escala .barra { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; }
+.escala .seg { height: 10px; border-radius: 6px; opacity: .22; transition: opacity .2s, transform .2s; }
+.escala .seg.activo { opacity: 1; transform: scaleY(1.5); }
+.escala .marcas { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; margin-top: 8px;
+  color: var(--texto-2); font-size: .75rem; }
+.zona-info {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px;
+  background: var(--superficie); border: 1px solid var(--borde); border-radius: 12px;
+  padding: 14px 16px; margin-top: 12px;
+}
+.zona-info .nombre { font: 700 1.15rem/1.2 var(--titulos); }
+.zona-info .rango { color: var(--texto-2); }
+.zona-info .desc { color: var(--texto-2); font-size: .9rem; flex-basis: 100%; }
+
+/* Botón principal: texto oscuro sobre lima (contraste) */
+button[kind="primary"], [data-testid="stBaseButton-primary"] {
+  color: var(--fondo) !important; font-weight: 700 !important;
+}
+button[kind="primary"] p, [data-testid="stBaseButton-primary"] p { color: var(--fondo) !important; }
+button[kind="primary"]:disabled, [data-testid="stBaseButton-primary"]:disabled {
+  background: var(--superficie-2) !important; border-color: var(--borde) !important;
+  color: var(--texto-2) !important; font-weight: 500 !important;
+}
+button[kind="primary"]:disabled p, [data-testid="stBaseButton-primary"]:disabled p { color: var(--texto-2) !important; }
+.st-key-generar button { height: 3.2rem; font-size: 1.05rem; }
+.st-key-generar button p { font-size: 1.05rem !important; }
+
+/* ---------- Resultados ---------- */
+.res-cabecera {
+  border: 1px solid var(--borde); border-radius: 20px; padding: 26px 26px 22px; margin-top: 34px;
+  background: linear-gradient(160deg, color-mix(in srgb, var(--zona) 14%, #121922) 0%, #0B0F14 75%);
+}
+.res-cabecera .eyebrow { font: 600 12px/1 "Inter", sans-serif; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--zona); margin-bottom: 10px; }
+.res-cabecera h2 { font-family: var(--titulos); font-weight: 700; font-size: clamp(1.6rem, 4vw, 2.3rem);
+  margin: 0 0 18px; padding: 0; }
+.metricas { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.metrica { background: rgba(255,255,255,.035); border: 1px solid var(--borde); border-radius: 12px; padding: 12px 14px; }
+.metrica .v { font: 700 1.6rem/1.1 var(--titulos); color: var(--texto); }
+.metrica .l { color: var(--texto-2); font-size: .8rem; margin-top: 4px; }
+@media (max-width: 640px) {
+  .hero { padding: 26px 20px 22px; }
+  .hero .pulso { display: none; }
+  .metricas { grid-template-columns: repeat(2, 1fr); }
+  .paso-sub { margin-left: 0; }
+}
+
+.nota { color: var(--texto-2); font-size: .88rem; margin: 12px 2px 0; }
+.nota::before { content: "ℹ︎ "; color: var(--zona); }
+
+/* Lista de canciones */
+.lista { margin-top: 14px; border: 1px solid var(--borde); border-radius: 16px; overflow: hidden; }
+.pista {
+  display: grid; align-items: center; gap: 14px;
+  grid-template-columns: 34px minmax(0, 1fr) 76px 46px 120px 34px;
+  padding: 12px 16px; border-bottom: 1px solid var(--borde); background: var(--superficie);
+  transition: background .15s;
+}
+.pista:last-child { border-bottom: 0; }
+.pista:hover { background: var(--superficie-2); }
+.pista .num { font: 700 1rem/1 var(--titulos); color: var(--texto-2); text-align: right; }
+.pista .t { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pista .a { color: var(--texto-2); font-size: .85rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pista .bpm { justify-self: start; background: color-mix(in srgb, var(--zona) 85%, white); }
+.pista .dur { color: var(--texto-2); font-variant-numeric: tabular-nums; font-size: .9rem; }
+.pista .sim { display: flex; align-items: center; gap: 8px; color: var(--texto-2); font-size: .78rem;
+  font-variant-numeric: tabular-nums; }
+.pista .sim .riel { flex: 1; height: 6px; border-radius: 6px; background: var(--borde); overflow: hidden; }
+.pista .sim .riel i { display: block; height: 100%; border-radius: 6px; background: var(--zona); }
+.pista a.play {
+  width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center;
+  background: #1DB954; color: #0B0F14 !important; text-decoration: none !important; font-size: 13px;
+}
+.pista a.play:hover { filter: brightness(1.1); }
+@media (max-width: 640px) {
+  .pista { grid-template-columns: 26px minmax(0, 1fr) auto 32px; gap: 10px; padding: 12px; }
+  .pista .dur, .pista .sim { display: none; }
+}
+
+.seccion { font: 700 1.1rem/1.2 var(--titulos); margin: 28px 0 10px; }
+.pie { color: var(--texto-2); font-size: .8rem; text-align: center; margin-top: 48px;
+  border-top: 1px solid var(--borde); padding-top: 18px; }
