@@ -228,3 +228,13 @@ Las pruebas realizadas nos permitieron comprobar que el programa puede recibir l
 Como mejora futura, nos gustaría incorporar información sobre la popularidad de las canciones, las preferencias de los usuarios y los resultados de sus entrenamientos. De esta manera, podríamos hacer que las recomendaciones sean cada vez más personalizadas.
 
 En general, consideramos que esta segunda etapa cumplió con nuestro objetivo de desarrollar un sistema de recomendación funcional y nos permitió aplicar conceptos de análisis de datos y aprendizaje automático a una situación relacionada con el running.
+
+## TERCERA ENTREGA
+
+### Integración con el recomendador y resultados 
+
+El clustering se incorporó como una capa adicional de análisis y visualización del recomendador musical. El sistema conserva el enfoque en BPM y utiliza una similitud coseno ponderada, en la que BPM representa el 40% del peso. La playlist debe contener al menos 10 canciones y alcanzar 40 minutos, evitando duplicados mediante la combinación de título y artista. 
+
+La visualización permite comparar la ubicación de las canciones favoritas y las recomendaciones dentro del espacio PCA, además de mostrar los centroides de los grupos. Para representar los resultados en dos dimensiones se utilizan PC1 y PC2. 
+
+En la prueba documentada se generó una lista de 10 canciones con una duración total de 42.3 minutos y un rango de 140–159 BPM. Durante la preparación del catálogo se eliminaron 7,388 versiones repetidas. Estos valores corresponden a esa ejecución y no deben presentarse como resultados universales del sistema.
