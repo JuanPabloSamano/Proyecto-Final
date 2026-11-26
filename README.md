@@ -230,6 +230,14 @@ Como mejora futura, nos gustaría incorporar información sobre la popularidad d
 En general, consideramos que esta segunda etapa cumplió con nuestro objetivo de desarrollar un sistema de recomendación funcional y nos permitió aplicar conceptos de análisis de datos y aprendizaje automático a una situación relacionada con el running.
 
 ## TERCERA ENTREGA
+
+### Conexión y lectura desde Databricks
+
+El notebook se conecta a Databricks SQL desde VS Code para consultar la tabla Gold gold_catalogo_recomendador. La tabla
+contiene 1,250,009 canciones únicas y 14 columnas.
+Para administrar la descarga y el uso de memoria, los registros se recuperan en lotes de 50,000 filas. Posteriormente, la información
+se integra en un DataFrame de Python que se utiliza en las siguientes etapas del proyecto, incluyendo PCA y recomendación.
+
 ### Agrupamiento de canciones con PCA y K-means 
 
 Después de preparar las características musicales y aplicar PCA, se incorporó K-means para identificar grupos de canciones con perfiles similares dentro del espacio de componentes principales. El modelo se configuró para generar 5 clusters y se ajustó utilizando una muestra máxima de 20,000 canciones. 
