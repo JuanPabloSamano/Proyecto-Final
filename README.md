@@ -231,6 +231,14 @@ En general, consideramos que esta segunda etapa cumplió con nuestro objetivo de
 
 ## TERCERA ENTREGA
 
+### Flujo de datos: Bronze, Silver y Gold
+
+El catálogo musical se organizó en tres capas. Bronze concentró 1,318,025 registros de entrada. Después de la transformación y
+depuración, Silver quedó en 1,314,640 filas. Finalmente, Gold generó la tabla gold_catalogo_recomendador, con 1,250,009 canciones
+únicas y 14 columnas.
+La capa Gold funciona como fuente consolidada para la etapa de recomendación. Esta separación permite distinguir los datos de
+entrada, los datos transformados y el conjunto final preparado para su uso.
+
 ### Conexión y lectura desde Databricks
 
 El notebook se conecta a Databricks SQL desde VS Code para consultar la tabla Gold gold_catalogo_recomendador. La tabla
